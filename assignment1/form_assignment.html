@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <form action="" id="myform">
+      <label for="id_fullname">Full Name</label>
+      <input type="text" autofocus name="fullname" id="id_fullname" size="80" 
+      placeholder="Your name here" required>
+      <br>
+      <label for="id_password">Password</label>
+      <input type="password" name="Password" id="id_password" 
+      title="Must contain at least one number and one uppercase and lowercase letter, 8-20 characters and special character" size="20" 
+      placeholder="Password" required>
+      <br>
+      <label for="id_password2">Confirm password</label>
+      <input type="password" name="Password2" id="id_password2"
+      title="Must contain at least one number and one uppercase and lowercase letter, 8-20 characters and special character" size="20" 
+      placeholder="Password" required>
+      <br>
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday">
+      <br>
+      <fieldset><legend>Gender</legend>
+        <input type="radio" name="gender" value="M" id="id_male" checked> <label for="id_male">Male</label>
+        <input type="radio" name="gender" value="F" id="id_female"> <label for="id_female">Female</label>
+        <input type="radio" name="gender" value="Other" id="id_other"> <label for="id_other">Other</label>
+      </fieldset>
+      <br>
+      <fieldset><legend>Hobbies</legend>
+        <input type="checkbox" name="hobby" value="dancing" id="id_dancing"> <label for="id_dancing">Dancing</label>
+        <input type="checkbox" name="hobby" value="skiing" id="id_skiing"> <label for="id_skiing">Skiing</label>
+        <input type="checkbox" name="hobby" value="videogames" id="id_videogames"> <label for="id_videogames">Videogames</label>
+        <input type="checkbox" name="hobby" value="training" id="id_training"> <label for="id_training">Training</label>
+        <input type="checkbox" name="hobby" value="reading" id="id_reading"> <label for="id_reading">Reading</label>
+        <input type="checkbox" name="hobby" value="other" id="id_other"> <label for="id_other">Other</label>
+      </fieldset>
+      <br>
+      <label for="colorpicker">Favourite Color:</label>
+      <input type="color" id="colorpicker" value="#0000ff">
+      <br>
+      <label for="id_height">Height (cm)</label>
+      <input type="range" id="id_height" min="40" max="300" value="170"
+      oninput="id_height_number.value = this.value">
+      <input type="number" id="id_height_number" value="170" min="0"
+      max="300" oninput="id_height.value = this.value">
+      <br>
+      <label for="country">Country</label>
+      <select name="country" id="country">
+        <optgroup label="Nordic">
+          <option value="fi" selected>Finland</option>
+          <option value="sv">Sweden</option>
+          <option value="no">Norway</option>
+          <option value="dk">Denmark</option>
+        </optgroup>
+        <optgroup label="Other">
+          <option value="ru">Russia</option>
+          <option value="ee">Estonia</option>
+          <option value="lt">Lithuania</option>
+        </optgroup>
+      </select>
+      <br>
+      <label for="id_prof">Profession</label>
+      <input list="professionlist" id="id_prof" size="40">
+      <datalist id="professionlist">
+        <option value="Teacher"></option>
+        <option value="Photographer"></option>
+        <option value="Dancer"></option>
+        <option value="Electrician"></option>
+      </datalist>
+      <br>
+      <label for="id_message">Message</label>
+      <textarea id="id_message" rows="6" cols="60" placeholder="Write your message here.." maxlength="1000" required></textarea>
+      <br>
+      <input type="submit" value="Send" onclick="showResults(event)"></input>
+      <hr>
+      <output id="id_result"></output>
+    </form>
+</body>
+
+</html>
