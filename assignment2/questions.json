@@ -1,0 +1,17 @@
+[
+  {
+    "question": "Street artist Banksy is originally associated with which British city?",
+    "choices": ["London", "Bristol", "Nottingham"],
+    "correctAnswer": "Bristol"
+  },
+  {
+    "question": "Which rock band was founded by Trent Reznor in 1988?",
+    "choices": ["Nine Inch Nails", "The Smashing Pumpkins", "Ministry"],
+    "correctAnswer": "Nine Inch Nails"
+  },
+  {
+    "question": "In what US State is the city Nashville?",
+    "choices": ["Tennessee", "Colorado", "Wyoming"],
+    "correctAnswer": "Tennessee"
+  }
+]
